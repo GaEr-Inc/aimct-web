@@ -1,7 +1,7 @@
 import React from "react";
 import senafelogo from "../assets/sena_fe_logos.svg";
 import NavButton from "./NavButton";
-export function NavBar() {
+export function Header() {
   return (
       <nav className="flex items-center justify-evenly mx-auto h-20 w-screen">
         <div className="ml-20">

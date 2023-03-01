@@ -1,11 +1,11 @@
-import { NavBar } from "./Components/NavBar";
+import { Header } from "./Components/Header";
 import "./App.css";
 import secretaryImage from "./assets/secretary.jpg";
 
 function App() {
   return (
     <div className="App h-screen w-fit overflow-auto">
-      <NavBar />
+      <Header />
       <div>
         <img
           src={secretaryImage}
