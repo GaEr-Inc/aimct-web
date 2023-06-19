@@ -61,18 +61,18 @@ function Landing() {
           Algunos de Nuestros Clientes
         </Title>
         <Center >
-          <Avatar mx={"xs"} radius={"100%"} size={"10rem"}>
+          <Avatar src={"src/assets/hefesto.png"} mx={"xs"} radius={"100%"} size={"8rem"}>
             AL
           </Avatar>
-         <Avatar mx={"xs"} radius={"100%"} size={"10rem"}>
+          <Avatar src={"src/assets/laspalmas.png"} mx={"xs"} radius={"0%"} size={"7rem"}>
             AL
-          </Avatar><Avatar mx={"xs"} radius={"100%"} size={"10rem"}>
+          </Avatar><Avatar src={"src/assets/gescomert.png"} mx={"xs"} radius={"100%"} size={"10rem"}>
             AL
-          </Avatar><Avatar mx={"xs"} radius={"100%"} size={"10rem"}>
+          </Avatar><Avatar src={"src/assets/gibraltar.png"} mx={"xs"} radius={"100%"} size={"9rem"}>
             AL
-          </Avatar><Avatar mx={"xs"} radius={"100%"} size={"10rem"}>
+          </Avatar><Avatar src={"src/assets/greenfruit.png"} mx={"xs"} radius={"100%"} size={"10rem"}>
             AL
-          </Avatar><Avatar mx={"xs"} radius={"100%"} size={"10rem"}>
+          </Avatar><Avatar src={"src/assets/cafelatostadora.png"} mx={"xs"} radius={"10%"} size={"6rem"}>
             AL
           </Avatar>
         </Center>
