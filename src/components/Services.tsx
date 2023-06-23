@@ -7,10 +7,10 @@ import {
   Grid,
 } from "@mantine/core";
 import {
-  IconReceiptOff,
   IconFlame,
-  IconCircleDotted,
   IconFileCode,
+  IconBolt,
+  IconTextCaption,
 } from "@tabler/icons-react";
 
 const useStyles = createStyles((theme) => ({
@@ -32,22 +32,22 @@ const useStyles = createStyles((theme) => ({
 
 const features = [
   {
-    icon: IconReceiptOff,
-    title: "Servicios Contables y tributarios.",
+    icon: IconTextCaption,
+    title: "Contabilidad financiera",
     description:
-      "All packages are published under MIT license, you can use Mantine in any project",
+      "registro y seguimiento de transacciones financieras, preparación de estados financieros y análisis de la salud financiera de la empresa.",
   },
   {
     icon: IconFileCode,
-    title: "Asesorías Jurídicas",
+    title: "Planificación tributaria",
     description:
-      "Build type safe applications, all components and hooks export types",
+      "Desarrollo de estrategias para minimizar la carga tributaria legalmente, aprovechando las exenciones y deducciones fiscales disponibles.",
   },
   {
-    icon: IconCircleDotted,
-    title: "Acompañamiento especializado en proyectos Fondoemprender.",
+    icon: IconBolt,
+    title: "Plataformas tecnológicas",
     description:
-      "With new :focus-visible selector focus ring will appear only when user navigates with keyboard",
+      "Implementación de soluciones informáticas desarrolladas en materia contable y/o administrativas para la integración de procesos con terceros.",
   },
   {
     icon: IconFlame,
@@ -62,10 +62,10 @@ export function FeaturesTitle() {
 
   const items = features.map((feature) => (
     <div key={feature.title}>
-      <Grid justify="center" align="center">
-        <Grid.Col span={1} order={1}>
+      <Grid justify="center" align="center" grow gutter={"xs"}>
+        <Grid.Col span={1} order={1} style={{paddingLeft: "4rem"}}>
           <ThemeIcon
-            size={44}
+            size={50}
             radius="md"
             variant="gradient"
             gradient={{ deg: 133, from: 'blue', to: 'cyan' }}
@@ -73,11 +73,11 @@ export function FeaturesTitle() {
             <feature.icon size={rem(26)} stroke={1.5} />
           </ThemeIcon>
         </Grid.Col>
-        <Grid.Col span={7} order={2}>
-          <Text fz="lg" mt="sm" fw={500}>
+        <Grid.Col span={8} order={2}>
+          <Text fz="xl" mt="sm" fw={500}>
             {feature.title}
           </Text>
-          <Text c="dimmed" fz="sm">
+          <Text c="dimmed" fz="lg">
             {feature.description}
           </Text>
         </Grid.Col>
@@ -87,10 +87,10 @@ export function FeaturesTitle() {
   ));
 
   return (
-    <div className={classes.wrapper}>
+    <div className={classes.wrapper} style={{paddingBottom: "5rem"}}>
       <SimpleGrid
         cols={2}
-        spacing={0}
+        spacing={60}
         verticalSpacing={20}
         breakpoints={[{ maxWidth: "md", cols: 1 }]}
       >
@@ -102,7 +102,7 @@ export function FeaturesTitle() {
         td="underline"
         fw={600}
       >
-        Conocer Más  ...
+        Conocer más  ...
       </Text>
     </div>
   );

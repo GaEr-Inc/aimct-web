@@ -16,7 +16,7 @@ const useStyles = createStyles((theme) => ({
     flexDirection: 'column',
     justifyContent: 'flex-end',
     alignItems: 'flex-start',
-    paddingBottom: `calc(${theme.spacing.xl} * 6)`,
+    paddingBottom: `calc(${theme.spacing.xl} * 5)`,
     zIndex: 1,
     position: 'relative',
 
@@ -54,7 +54,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   control: {
-    marginTop: `calc(${theme.spacing.xl} * 1.5)`,
+    marginTop: `calc(${theme.spacing.xl} * 1.6)`,
 
     [theme.fn.smallerThan('sm')]: {
       width: '100%',
@@ -73,15 +73,14 @@ export function Hero() {
         zIndex={0}
       />
       <Container className={classes.container}>
-        {/* <Title className={classes.title}>A fully featured React components library</Title> */}
-        {/* <Text className={classes.description} size="xl" mt="xl"> */}
-          {/* Build fully functional accessible web applications faster than ever – Mantine includes */}
-          {/* more than 120 customizable components and hooks to cover you in any situation */}
-        {/* </Text> */}
+        <Title className={classes.title}>Asesorías Integrales MCT</Title>
+        <Text className={classes.description} size="xl" mt="xl">
+          Contrata la mejor ayuda tributaria para tu empresa
+        </Text>
 
-        {/* <Button variant="gradient" size="xl" radius="xl" className={classes.control}> */}
-          {/* Get started */}
-        {/* </Button> */}
+        <Button variant="gradient" size="xl" radius="xl" className={classes.control}>
+          Leer más
+        </Button>
       </Container>
     </div>
   );

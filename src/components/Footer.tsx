@@ -1,5 +1,5 @@
 import { createStyles, Image, Text, Container, ActionIcon, Group, rem } from '@mantine/core';
-import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram, IconBrandWhatsapp, IconBrandFacebook } from '@tabler/icons-react';
+import { IconBrandInstagram, IconBrandWhatsapp, IconBrandFacebook } from '@tabler/icons-react';
 import Logofe from '../assets/logofe.svg';
 
 const useStyles = createStyles((theme) => ({

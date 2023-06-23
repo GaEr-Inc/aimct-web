@@ -7,8 +7,8 @@ function Landing() {
       <Hero />
       <div
         style={{
-          paddingLeft: "12rem",
-          paddingRight: "12rem",
+          paddingLeft: "18rem",
+          paddingRight: "18rem",
           paddingTop: "2rem"
         }}
       >
@@ -24,27 +24,27 @@ function Landing() {
           }}
         >
           Acerca de nosotros
-        </Title>
+        </Title> */}
         <Text
           style={{
             textAlign: "left",
-            paddingLeft: "3rem",
+            paddingLeft: "8rem",
+            paddingRight: "7rem",
             fontFamily: "Raleway",
             fontSize: "20px",
-            marginTop: "2rem",
+            marginTop: "3rem",
             marginBottom: "5rem",
           }}
         >
-          Asesorías Integrales MCT S.A.S. es una empresa que presta servicios integrales especializados
-          en contabilidad, brindando asesorías en temas financieros, jurídicos, tributarios y laborales.
-          Ofrecemos un acompañamiento amplio y consultorias contables,
-          financieras y tributarias, con un acompañamiento especializado en
-          empresas Fondoemprender, siempre atentos...
-        </Text> */}
-
+          Somos una empresa especializada en brindar asesorías contables, 
+          tributarias y jurídicas adaptadas a las necesidades de las pequeñas y medianas empresas.
+          Nuestro enfoque está en brindar soluciones eficientes y personalizadas que impulsen el crecimiento
+          y la rentabilidad de nuestros clientes empresariales.
+        </Text>
+        <Divider my="sm" />
         <Title
           style={{
-            marginTop: "2rem",
+            marginTop: "4rem",
             paddingLeft: "3rem",
             textAlign: "left",
             color: "#A7060C",
@@ -54,12 +54,12 @@ function Landing() {
         >
           Nuestros Servicios
         </Title>
-          <FeaturesTitle/>
-          <Divider my="sm" />
+        <FeaturesTitle />
+        <Divider my="sm" />
         <Title
           style={{
             marginTop: "1rem",
-            paddingBottom: "3rem",
+            paddingBottom: "2rem",
             paddingLeft: "3rem",
             paddingTop: "4rem",
             textAlign: "left",
@@ -70,7 +70,7 @@ function Landing() {
         >
           Algunos de Nuestros Clientes
         </Title>
-        <Center >
+        <Center style={{paddingBottom: "2rem"}}>
           <Avatar src={"src/assets/hefesto.png"} mx={"xs"} radius={"100%"} size={"8rem"}>
             AL
           </Avatar>
