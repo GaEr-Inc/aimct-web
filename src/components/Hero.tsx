@@ -16,7 +16,7 @@ const useStyles = createStyles((theme) => ({
     flexDirection: 'column',
     justifyContent: 'flex-end',
     alignItems: 'flex-start',
-    paddingBottom: `calc(${theme.spacing.xl} * 5)`,
+    paddingBottom: `calc(${theme.spacing.xl} * 7)`,
     zIndex: 1,
     position: 'relative',
 
@@ -54,8 +54,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   control: {
-    marginTop: `calc(${theme.spacing.xl} * 1.6)`,
-
+    marginTop: `calc(${theme.spacing.xl} * 1.2)`,
     [theme.fn.smallerThan('sm')]: {
       width: '100%',
     },
@@ -68,17 +67,17 @@ export function Hero() {
   return (
     <div className={classes.hero}>
       <Overlay
-        gradient="linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, .65) 40%)"
+        gradient="linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, .68) 40%)"
         opacity={1}
         zIndex={0}
       />
       <Container className={classes.container}>
         <Title className={classes.title}>Asesorías Integrales MCT</Title>
         <Text className={classes.description} size="xl" mt="xl">
-          Contrata la mejor ayuda tributaria para tu empresa
+          Acompañamiento  especializado para tu empresa.
         </Text>
 
-        <Button variant="gradient" size="xl" radius="xl" className={classes.control}>
+        <Button variant="gradient" gradient={{ from: '#A7060C', to: '#C64449', deg: -135 }} size="lg" radius="xl" className={classes.control}>
           Leer más
         </Button>
       </Container>

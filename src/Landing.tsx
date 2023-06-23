@@ -12,7 +12,7 @@ function Landing() {
           paddingTop: "2rem"
         }}
       >
-        {/* <Title
+        <Title
           style={{
             marginTop: "2rem",
             paddingLeft: "3rem",
@@ -23,8 +23,8 @@ function Landing() {
             fontWeight: "1000",
           }}
         >
-          Acerca de nosotros
-        </Title> */}
+          Acerca de Nosotros
+        </Title>
         <Text
           style={{
             textAlign: "left",

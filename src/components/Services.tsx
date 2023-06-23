@@ -68,7 +68,7 @@ export function FeaturesTitle() {
             size={50}
             radius="md"
             variant="gradient"
-            gradient={{ deg: 133, from: 'blue', to: 'cyan' }}
+            gradient={{ deg: 133, from: '#A7060C', to: '#C64449' }}
           >
             <feature.icon size={rem(26)} stroke={1.5} />
           </ThemeIcon>
@@ -87,10 +87,10 @@ export function FeaturesTitle() {
   ));
 
   return (
-    <div className={classes.wrapper} style={{paddingBottom: "5rem"}}>
+    <div className={classes.wrapper} style={{paddingBottom: "5rem", paddingTop: "4rem"}}>
       <SimpleGrid
         cols={2}
-        spacing={60}
+        spacing={50}
         verticalSpacing={20}
         breakpoints={[{ maxWidth: "md", cols: 1 }]}
       >
