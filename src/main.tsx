@@ -4,6 +4,7 @@ import App from "./App.tsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { MantineProvider } from "@mantine/core";
 import Landing from "./Landing.tsx";
+import Contacto from "./Contacto.tsx"
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         Component: Landing
+      },
+      {
+        path: "/contacto",
+        Component: Contacto
       }
     ]
   },

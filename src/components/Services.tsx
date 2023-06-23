@@ -35,7 +35,7 @@ const features = [
     icon: IconTextCaption,
     title: "Contabilidad financiera",
     description:
-      "registro y seguimiento de transacciones financieras, preparación de estados financieros y análisis de la salud financiera de la empresa.",
+      "Registro y seguimiento de transacciones, preparación de estados financieros y análisis del estado financiero de la empresa.",
   },
   {
     icon: IconFileCode,
@@ -51,9 +51,9 @@ const features = [
   },
   {
     icon: IconFlame,
-    title: "Asesorías SG-SST",
+    title: "Elaboración y presentación de declaraciones de impuestos",
     description:
-      "Customize colors, spacing, shadows, fonts and many other settings with global theme object",
+      "Impuesto de renta, impuesto al valor agregado, retención en la fuente, entre otros.",
   },
 ];
 
@@ -87,7 +87,7 @@ export function FeaturesTitle() {
   ));
 
   return (
-    <div className={classes.wrapper} style={{paddingBottom: "5rem", paddingTop: "4rem"}}>
+    <div className={classes.wrapper} style={{paddingBottom: "3rem", paddingTop: "4rem"}}>
       <SimpleGrid
         cols={2}
         spacing={50}
@@ -98,6 +98,7 @@ export function FeaturesTitle() {
       </SimpleGrid>
       <Text align="right"
         color="blue"
+        style={{paddingTop: "2rem"}}
         size={18}
         td="underline"
         fw={600}

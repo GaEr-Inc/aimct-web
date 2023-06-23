@@ -1,6 +1,6 @@
-import { createStyles, Image, Text, Container, ActionIcon, Group, rem } from '@mantine/core';
+import { createStyles, Image, Text, Container, ActionIcon, Group, rem, Grid } from '@mantine/core';
 import { IconBrandInstagram, IconBrandWhatsapp, IconBrandFacebook } from '@tabler/icons-react';
-import Logofe from '../assets/logofe.svg';
+import Logomct from '../assets/logomctfull.png';
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -8,9 +8,8 @@ const useStyles = createStyles((theme) => ({
     paddingTop: `calc(${theme.spacing.xl} * 2)`,
     paddingBottom: `calc(${theme.spacing.xl} * 2)`,
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
-    borderTop: `${rem(1)} solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
-    }`,
+    borderTop: `${rem(1)} solid ${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
+      }`,
   },
 
   logo: {
@@ -52,7 +51,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   wrapper: {
-    width: rem(160),
+    width: rem(225),
   },
 
   link: {
@@ -61,6 +60,7 @@ const useStyles = createStyles((theme) => ({
     fontSize: theme.fontSizes.sm,
     paddingTop: rem(3),
     paddingBottom: rem(3),
+    width: "15rem",
 
     '&:hover': {
       textDecoration: 'underline',
@@ -82,9 +82,8 @@ const useStyles = createStyles((theme) => ({
     marginTop: theme.spacing.xl,
     paddingTop: theme.spacing.xl,
     paddingBottom: theme.spacing.xl,
-    borderTop: `${rem(1)} solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
-    }`,
+    borderTop: `${rem(1)} solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
+      }`,
 
     [theme.fn.smallerThan('sm')]: {
       flexDirection: 'column',
@@ -119,6 +118,7 @@ export function FooterLinks({ data }: FooterLinksProps) {
       >
         {link.label}
       </Text>
+
     ));
 
     return (
@@ -133,7 +133,7 @@ export function FooterLinks({ data }: FooterLinksProps) {
     <footer className={classes.footer}>
       <Container className={classes.inner}>
         <div className={classes.logo}>
-          <Image src={Logofe} width={200}   />
+          <Image src={Logomct} width={200} />
           <Text size="xs" color="dimmed" className={classes.description}>
           </Text>
         </div>
@@ -145,7 +145,7 @@ export function FooterLinks({ data }: FooterLinksProps) {
         </Text>
 
         <Group spacing={0} className={classes.social} position="right" noWrap>
-          <ActionIcon size="lg">
+          <ActionIcon size="lg" component='a' href="https://www.instagram.com/aimct.oficial/" target='_blank'>
             <IconBrandInstagram size="1.05rem" stroke={1.5} />
           </ActionIcon>
           <ActionIcon size="lg">
@@ -163,22 +163,22 @@ export function FooterLinks({ data }: FooterLinksProps) {
 export const FooterLinksData = {
   "data": [
     {
-      "title": "Community",
+      "title": "Información",
       "links": [
         {
-          "label": "Join Discord",
+          "label": "info.asesoriasintegralesmc@gmail.com",
           "link": "#"
         },
         {
-          "label": "Follow on Twitter",
+          "label": "Celular: 319 587 6192",
           "link": "#"
         },
         {
-          "label": "Email newsletter",
+          "label": "Dirección: Calle 6 # 1E 45",
           "link": "#"
         },
         {
-          "label": "GitHub discussions",
+          "label": "Guadalajara de Buga, Valle del Cauca",
           "link": "#"
         }
       ]

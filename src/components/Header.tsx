@@ -7,15 +7,15 @@ import {
   Burger,
   Container,
   rem,
-  Image
+  Image,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { IconChevronDown } from "@tabler/icons-react";
-import Logofe from "../assets/logofe.svg"
+import Logomct from "../assets/logomctfull.png"
 
 const useStyles = createStyles((theme) => ({
   header: {
-    backgroundColor: "#BBBFC8",
+    backgroundColor: "#F0F0F0",
     borderBottom: 0,
   },
 
@@ -67,18 +67,18 @@ const useStyles = createStyles((theme) => ({
 export interface HeaderSearchProps {
   links: (
     | {
-        link: string;
-        label: string;
-        links?: undefined;
-      }
+      link: string;
+      label: string;
+      links?: undefined;
+    }
     | {
+      link: string;
+      label: string;
+      links: {
         link: string;
         label: string;
-        links: {
-          link: string;
-          label: string;
-        }[];
-      }
+      }[];
+    }
   )[];
 }
 
@@ -132,9 +132,9 @@ export function HeaderMenuColored({ links }: HeaderSearchProps) {
     <Header height={56} className={classes.header} mb={120}>
       <Container>
         <div className={classes.inner}>
-          <Image src={Logofe} width={200}   />
+              <Image src={Logomct} width={200} />
           <Group spacing={5} className={classes.links}>
-            
+
             {items}
           </Group>
           <Burger
@@ -142,10 +142,10 @@ export function HeaderMenuColored({ links }: HeaderSearchProps) {
             onClick={toggle}
             className={classes.burger}
             size="sm"
-            color="#fff"
+            color="#F8F9FA"
           />
         </div>
       </Container>
-    </Header>
+    </Header >
   );
 }

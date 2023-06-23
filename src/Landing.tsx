@@ -1,6 +1,16 @@
 import { Avatar, Center, Text, Title, Divider } from "@mantine/core";
 import { Hero } from "./components/Hero";
 import { FeaturesTitle } from "./components/Services";
+import hefesto from "./assets/hefesto.png"
+import laspalmas from "./assets/laspalmas.png"
+import gescomert from "./assets/gescomert.png"
+import gibraltar from "./assets/gibraltar.png"
+import greenfruit from "./assets/greenfruit.png"
+import cafelatostadora from "./assets/cafelatostadora.png"
+
+
+
+
 function Landing() {
   return (
     <div>
@@ -71,18 +81,18 @@ function Landing() {
           Algunos de Nuestros Clientes
         </Title>
         <Center style={{paddingBottom: "2rem"}}>
-          <Avatar src={"src/assets/hefesto.png"} mx={"xs"} radius={"100%"} size={"8rem"}>
+          <Avatar src={hefesto} mx={"xs"} radius={"100%"} size={"8rem"}>
             AL
           </Avatar>
-          <Avatar src={"src/assets/laspalmas.png"} mx={"xs"} radius={"0%"} size={"7rem"}>
+          <Avatar src={laspalmas} mx={"xs"} radius={"0%"} size={"7rem"}>
             AL
-          </Avatar><Avatar src={"src/assets/gescomert.png"} mx={"xs"} radius={"100%"} size={"10rem"}>
+          </Avatar><Avatar src={gescomert} mx={"xs"} radius={"100%"} size={"10rem"}>
             AL
-          </Avatar><Avatar src={"src/assets/gibraltar.png"} mx={"xs"} radius={"100%"} size={"9rem"}>
+          </Avatar><Avatar src={gibraltar} mx={"xs"} radius={"100%"} size={"9rem"}>
             AL
-          </Avatar><Avatar src={"src/assets/greenfruit.png"} mx={"xs"} radius={"100%"} size={"10rem"}>
+          </Avatar><Avatar src={greenfruit} mx={"xs"} radius={"100%"} size={"10rem"}>
             AL
-          </Avatar><Avatar src={"src/assets/cafelatostadora.png"} mx={"xs"} radius={"10%"} size={"6rem"}>
+          </Avatar><Avatar src={cafelatostadora} mx={"xs"} radius={"10%"} size={"6rem"}>
             AL
           </Avatar>
         </Center>
