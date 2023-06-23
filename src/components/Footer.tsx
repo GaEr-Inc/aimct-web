@@ -1,5 +1,5 @@
 import { createStyles, Image, Text, Container, ActionIcon, Group, rem } from '@mantine/core';
-import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
+import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram, IconBrandWhatsapp, IconBrandFacebook } from '@tabler/icons-react';
 import Logofe from '../assets/logofe.svg';
 
 const useStyles = createStyles((theme) => ({
@@ -146,13 +146,13 @@ export function FooterLinks({ data }: FooterLinksProps) {
 
         <Group spacing={0} className={classes.social} position="right" noWrap>
           <ActionIcon size="lg">
-            <IconBrandTwitter size="1.05rem" stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg">
-            <IconBrandYoutube size="1.05rem" stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg">
             <IconBrandInstagram size="1.05rem" stroke={1.5} />
+          </ActionIcon>
+          <ActionIcon size="lg">
+            <IconBrandWhatsapp size="1.05rem" stroke={1.5} />
+          </ActionIcon>
+          <ActionIcon size="lg">
+            <IconBrandFacebook size="1.05rem" stroke={1.5} />
           </ActionIcon>
         </Group>
       </Container>

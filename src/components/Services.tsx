@@ -3,6 +3,8 @@ import {
   SimpleGrid,
   Text,
   rem,
+  ThemeIcon,
+  Grid,
 } from "@mantine/core";
 import {
   IconReceiptOff,
@@ -60,32 +62,48 @@ export function FeaturesTitle() {
 
   const items = features.map((feature) => (
     <div key={feature.title}>
-      {/* <ThemeIcon
-          size={44}
-          radius="md"
-          variant="gradient"
-          gradient={{ deg: 133, from: 'blue', to: 'cyan' }}
-        >
-          <feature.icon size={rem(26)} stroke={1.5} />
-        </ThemeIcon> */}
-      <Text fz="lg" mt="sm" fw={500}>
-        {feature.title}
-      </Text>
-      <Text c="dimmed" fz="sm">
-        {feature.description}
-      </Text>
+      <Grid justify="center" align="center">
+        <Grid.Col span={1} order={1}>
+          <ThemeIcon
+            size={44}
+            radius="md"
+            variant="gradient"
+            gradient={{ deg: 133, from: 'blue', to: 'cyan' }}
+          >
+            <feature.icon size={rem(26)} stroke={1.5} />
+          </ThemeIcon>
+        </Grid.Col>
+        <Grid.Col span={7} order={2}>
+          <Text fz="lg" mt="sm" fw={500}>
+            {feature.title}
+          </Text>
+          <Text c="dimmed" fz="sm">
+            {feature.description}
+          </Text>
+        </Grid.Col>
+      </Grid>
     </div>
+
   ));
 
   return (
     <div className={classes.wrapper}>
       <SimpleGrid
         cols={2}
-        spacing={30}
+        spacing={0}
+        verticalSpacing={20}
         breakpoints={[{ maxWidth: "md", cols: 1 }]}
       >
         {items}
       </SimpleGrid>
+      <Text align="right"
+        color="blue"
+        size={18}
+        td="underline"
+        fw={600}
+      >
+        Conocer Más  ...
+      </Text>
     </div>
   );
 }
