@@ -1,8 +1,8 @@
 
 export const HeaderLinks = [
     {
-      "link": "/planes",
-      "label": "Planes"
+      "link": "/",
+      "label": "Inicio"
     },
     {
       "link": "/acerca-de-nosotros",
@@ -12,10 +12,10 @@ export const HeaderLinks = [
       "link": "/contacto",
       "label": "Contactanos"
     },
-    {
-      "link": "/clientes",
-      "label": "Clientes"
-    }
+    // {
+    //   "link": "/clientes",
+    //   "label": "Clientes"
+    // }
     // {
     //   "link": "#2",
     //   "label": "Support",

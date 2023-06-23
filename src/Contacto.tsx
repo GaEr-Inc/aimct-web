@@ -1,6 +1,8 @@
 import { Text, Title, Divider, Button, Group, TextInput, Image, Box, Grid, Space } from "@mantine/core";
 import { useForm, isNotEmpty, isEmail, hasLength } from '@mantine/form';
+
 function Contacto() {
+
     const form = useForm({
         initialValues: {
             name: '',
@@ -20,7 +22,8 @@ function Contacto() {
             style={{
                 paddingLeft: "18rem",
                 paddingRight: "18rem",
-                paddingTop: "2rem"
+                paddingTop: "2rem",
+                height: "10px"
             }}
         ><Grid grow>
                 <Grid.Col span={3}><Title
@@ -92,7 +95,7 @@ function Contacto() {
                         paddingRight: "0rem",
                         paddingBottom: "1rem",
                     }}>
-                        Horario de atención: Lun-Vie 8:00 - 18:00
+                        Horario de atención: Lun-Vie 8:00 a.m. - 6:00 p.m.
                     </Text>
                     <Image
                         style={{ paddingLeft: "0rem" }}

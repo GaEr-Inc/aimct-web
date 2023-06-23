@@ -1,4 +1,4 @@
-import { createStyles, Image, Text, Container, ActionIcon, Group, rem, Grid } from '@mantine/core';
+import { createStyles, Image, Text, Container, ActionIcon, Group, rem } from '@mantine/core';
 import { IconBrandInstagram, IconBrandWhatsapp, IconBrandFacebook } from '@tabler/icons-react';
 import Logomct from '../assets/logomctfull.png';
 
@@ -148,7 +148,7 @@ export function FooterLinks({ data }: FooterLinksProps) {
           <ActionIcon size="lg" component='a' href="https://www.instagram.com/aimct.oficial/" target='_blank'>
             <IconBrandInstagram size="1.05rem" stroke={1.5} />
           </ActionIcon>
-          <ActionIcon size="lg">
+          <ActionIcon size="lg" component='a' href='https://api.whatsapp.com/send?phone=573195876192' target='_blank'>
             <IconBrandWhatsapp size="1.05rem" stroke={1.5} />
           </ActionIcon>
           <ActionIcon size="lg">
